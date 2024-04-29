@@ -1,0 +1,18 @@
+% GLOSSARY TERMS
+
+\newglossaryentry{latex}{
+    name=Latex,
+    description={Is a markup language specially suited
+    for scientific documents}
+}
+
+\newglossaryentry{maths}{
+    name=Mathematics,
+    description={Mathematics is what mathematicians do}
+}
+
+\newglossaryentry{sample}{name={sample},
+description={an example}}
+
+% Continuous functions
+% 3 Examples of continuous functions

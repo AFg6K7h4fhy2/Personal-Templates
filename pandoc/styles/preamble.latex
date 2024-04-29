@@ -1,0 +1,101 @@
+% GLOSSARY TERMS
+% These are definitions in each glossary
+
+% GENERAL CODING STYLE
+\definecolor{upx3_gray}{gray}{0.975}
+\definecolor{backcolour}{RGB}{249,249,249}
+
+\lstset{
+    basicstyle=\ttfamily\footnotesize, % basic font styling
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    aboveskip=\medskipamount, % above block spacing
+    belowskip=\medskipamount, % below block spacing
+    numbers=left, % whether to use line numbers
+    numberstyle=\footnotesize, % size of line numbers
+    numbersep=5pt, % space between numbers and code
+    frame=single, % whether to use a frame {none, lines, topline, trBL...}
+    framesep=2pt, %
+    framerule=0.75pt, % width of frame
+    framexleftmargin=5mm, % frame left margin
+    framexrightmargin=5mm, % frame right margin
+    xleftmargin=5mm, % correct for frame adjustment
+    xrightmargin=5mm, % correct for frame adjustment
+    backgroundcolor=\color{upx3_gray}, % the background color
+    showlines=false, % small line between code lines not shown
+    breaklines=true, % wrap lines,
+    breakatwhitespace=true,
+    breakautoindent=true,
+}
+
+% TREE STYLE
+
+\lstdefinestyle{treeStyle}{
+    basicstyle=\ttfamily\footnotesize, % CHANGED
+    aboveskip=\medskipamount, % above block spacing
+    belowskip=\medskipamount, % below block spacing
+    numbers=none, % CHANGED
+    breaklines=false, %CHANGED
+    breakatwhitespace=false,%CHANGED
+    breakautoindent=false,%CHANGED
+}
+
+% RST CODE BLOCKS
+\definecolor{backcolour}{RGB}{249,249,249}
+\definecolor{rstkeywordcolor}{rgb}{0.52, 0.24, 0.47}  % For directives and roles
+\definecolor{rststringcolor}{rgb}{0.31, 0.60, 0.02}   % For interpreted text
+\definecolor{rstcommentcolor}{rgb}{0.25, 0.50, 0.35}  % For comments
+\definecolor{rstbackgroundcolor}{RGB}{250, 250, 245} % Slightly off-white background
+
+\lstdefinestyle{rstStyle}{
+    backgroundcolor=\color{upx3_gray},
+    basicstyle=\ttfamily\small, % basic font styling
+    keywordstyle=\color{rstkeywordcolor}\bfseries,
+    stringstyle=\color{rststringcolor},
+    commentstyle=\color{rstcommentcolor},
+    showstringspaces=false, % Don't show spaces in strings as special underscore characters
+    tabsize=4,
+}
+
+% PYTHON CODE BLOCKS
+\definecolor{backcolour}{RGB}{249,249,249}
+\definecolor{pythonred}{rgb}{0.7,0.1,0.1}   % For keywords, decorators
+\definecolor{pythongreen}{rgb}{0,0.5,0}     % For comments
+\definecolor{pythonblue}{rgb}{0,0,1.0}      % For strings
+\definecolor{pythonpurple}{rgb}{0.5,0,0.5}  % For classes and functions
+\definecolor{pythondocblue}{rgb}{0.25,0.35,0.75} % For docstrings
+
+\lstdefinestyle{pyStyle}{
+    backgroundcolor=\color{upx3_gray},
+    language=python,
+    basicstyle=\ttfamily\footnotesize, % basic font styling , \footnotesize  \scshape     \ttfamily
+    numbers=none, % CHANGED
+    numbersep=0pt, % CHANGED
+    keywordstyle=\color{pythonpurple}\bfseries,
+    stringstyle=\color{pythonred},
+    commentstyle=\color{pythongreen},
+    morecomment=[s][\color{pythondocblue}]{/**}{*/},
+    tabsize=4,
+}
+
+% R CODE BLOCKS
+\definecolor{backcolour}{RGB}{249,249,249}
+\definecolor{rkeywordcolor}{rgb}{0.13,0.29,0.53}  % For keywords
+\definecolor{rstringcolor}{rgb}{0.31,0.60,0.02}   % For strings
+\definecolor{rcommentcolor}{rgb}{0.56,0.35,0.01}  % For comments
+\definecolor{rbasecolor}{rgb}{0.95,0.02,0.48}     % For base functions and packages
+
+\lstdefinestyle{rStyle}{
+    language=R,
+    backgroundcolor=\color{backcolour},
+    basicstyle=\ttfamily\small, % basic font styling
+    keywordstyle=\color{rkeywordcolor}\bfseries,
+    stringstyle=\color{rstringcolor},
+    commentstyle=\color{rcommentcolor},
+    otherkeywords={!,!=,~,$,*,\&,/\^,\%/\%,\%*\%,\%\%,<-,<<-,=,==,>,>=,<=,|,||,&&,()},
+    morecomment=[l]\#,
+    morestring=[b]",
+    morestring=[b]',
+    tabsize=2,
+}
