@@ -2,7 +2,7 @@ function Link(el)
   -- Check if the link is to GitHub
   if el.target:find("wikipedia.org") then
     -- Define the path to the converted GitHub icon in PDF format
-    local icon_path = "../../templates/pandoc/styles/logos/wiki.pdf"
+    local icon_path = "../styles/logos/wiki.pdf"
     -- LaTeX command to insert, resize, and raise the icon
     -- Note: Adjusting the horizontal shift (e.g., \hspace{-1em}) may be needed
     local latexString = "\\raisebox{0.2em}{\\hspace{-0.5em}\\includegraphics[height=0.75em,width=0.75em]{" .. icon_path .. "}}"
